@@ -1,0 +1,25 @@
+{
+  "name": "ek-unique-search-cli-2",
+  "version": "1.0.0",
+  "description": "A CLI tool for searching text from files or stdin with uniqueness filtering, supporting regex and case-insensitive options.",
+  "type": "module",
+  "bin": {
+    "ek-unique-search": "./bin/ek-unique-search.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "search",
+    "unique",
+    "text",
+    "regex",
+    "case-insensitive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
