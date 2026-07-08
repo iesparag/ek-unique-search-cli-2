@@ -6,6 +6,10 @@ Supports fixed string or regular expression search, case-insensitive option, fil
 
 Repository: https://github.com/iesparag/ek-unique-search-cli-2
 
+[![npm version](https://img.shields.io/npm/v/ek-unique-search-cli-2.svg?label=npm)](https://www.npmjs.com/package/ek-unique-search-cli-2)
+[![Node.js CI](https://github.com/iesparag/ek-unique-search-cli-2/actions/workflows/node.js.yml/badge.svg)](https://github.com/iesparag/ek-unique-search-cli-2/actions)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 ## Features
 
 - **Search files or stdin for a string or regex pattern**
@@ -26,6 +30,17 @@ npm install -g ek-unique-search-cli-2
 ```
 
 Now you can use the command `ek-unique-search` from anywhere.
+
+Or, if you've cloned the repo for development:
+
+```
+git clone https://github.com/iesparag/ek-unique-search-cli-2.git
+cd ek-unique-search-cli-2
+npm install
+npm link
+```
+
+> `npm link` makes `ek-unique-search` available globally for your user.
 
 ### 2. Via npx (no install)
 
@@ -171,9 +186,47 @@ The main executable is at `bin/ek-unique-search.js` and is made executable (`chm
 
 Consistent modern JS style with ES modules. Lint using your favorite linter or IDE autoformat.
 
-## License
+---
 
-MIT
+## Deployment
+
+This is a CLI tool distributed via npm. **No cloud deployment is needed.**
+
+### Installation (for Users)
+
+Choose one of:
+
+- **Install globally (recommended):**
+  ```sh
+  npm install -g ek-unique-search-cli-2
+  # Now run:
+  ek-unique-search "pattern" [file]
+  ```
+- **Run directly via npx:**
+  ```sh
+  npx ek-unique-search-cli-2 "pattern" [file]
+  ```
+- **For local development (from cloned repo):**
+  ```sh
+  git clone https://github.com/iesparag/ek-unique-search-cli-2.git
+  cd ek-unique-search-cli-2
+  npm install
+  npm link   # Makes 'ek-unique-search' available globally for your user
+  ```
+
+### Uninstall
+
+If you installed globally:
+
+```
+npm uninstall -g ek-unique-search-cli-2
+```
+
+### Environment Variables
+
+This tool does not currently require any environment variables. If future versions add config via env, document them in `.env.example` (see repo).
+
+---
 
 ## Author
 
@@ -181,11 +234,9 @@ Parag Ies, 2024
 
 ---
 
-## Deployment
+## License
 
-(n/a for CLI packages, but for workflow completeness:)
-
-- No backend service or frontend is provided, and this CLI is not designed for web hosting, so no Railway/Vercel deployment config.
+MIT
 
 ## Contributing
 
