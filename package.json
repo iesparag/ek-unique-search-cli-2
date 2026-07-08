@@ -1,6 +1,6 @@
 {
   "name": "ek-unique-search-cli-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool for searching text from files or stdin with uniqueness filtering, supporting regex and case-insensitive options.",
   "type": "module",
   "bin": {
@@ -17,7 +17,7 @@
     "regex",
     "case-insensitive"
   ],
-  "author": "",
+  "author": "Parag Ies <parag@example.com>",
   "license": "MIT",
   "dependencies": {
     "yargs": "^17.7.2"
